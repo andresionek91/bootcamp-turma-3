@@ -1,0 +1,17 @@
+## Template Cloudformation
+
+Description: Cria um bucket no S3
+
+Resources:
+
+  MeuBucketBelisco:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: meu-primeiro-bucket-belisco-com-integracao-continua
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+
+
+
